@@ -1,34 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-app>
+    <v-main>
+      <HelloWorld/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import request from 'request'
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+    HelloWorld,
   },
-  mounted(){
-    request('http://localhost:8080/api', function(err, res, body) {
-      console.log('error : ' + err);
-      console.log('res : ' + res);
-      console.log('body : ' + body);
-    })
-  }
+
+  data: () => ({
+    //
+  }),
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
