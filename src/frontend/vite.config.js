@@ -6,21 +6,19 @@ const path = require('path')
 // https://vitejs.dev/config/
 export default defineConfig({
   build : {
-    outDir: path.resolve(__dirname, "../main/resources/static")
+    outDir: path.resolve(__dirname, "../main/resources/static"),
+    emptyOutDir: true
   },
   plugins: [vue()],
-  define: { 'process.env': {} },
-  /* remove the need to specify .vue files https://vitejs.dev/config/#resolve-extensions
-  resolve: {
-    extensions: [
-      '.js',
-      '.json',
-      '.jsx',
-      '.mjs',
-      '.ts',
-      '.tsx',
-      '.vue',
-    ]
-  },
-  */
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:9000',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    }
+  }
 })
