@@ -1,34 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <Header/>
+    <MainTitle/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import request from 'request'
+import MainTitle from './components/Main/MainTitle.vue'
+import Header from './components/layout/Header.vue'
+import Footer from './components/layout/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  },
-  mounted(){
-    request('http://localhost:8080/api', function(err, res, body) {
-      console.log('error : ' + err);
-      console.log('res : ' + res);
-      console.log('body : ' + body);
-    })
+    MainTitle,
+    Header,
+    Footer,
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="./assets/css/bulma/css/bulma.min.css"/>
