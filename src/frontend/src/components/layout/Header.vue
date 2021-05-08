@@ -1,10 +1,10 @@
 <template>
-  <div id="foo">
+  <div id="header-container">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <!-- home icon -->
-        <a class="image is-64x64" href="https://bulma.io">
-          <img src="../../assets/icon/칠한친구_대지_1.png">
+        <a class="image is-64x64" href="#">
+          <img src="../../assets/img/칠한친구_대지_1.png">
         </a>
 
         <!-- burger menu bar -->
@@ -74,7 +74,7 @@ export default {
 </script>
 
 <style scoped>
-#foo {
+#header-container {
   height: 90px;
 }
 </style>

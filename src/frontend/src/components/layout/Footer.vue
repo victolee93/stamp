@@ -1,39 +1,29 @@
 <template>
   <footer class="footer">
     <div class="content has-text-centered">
-      <h5>관악 헤드메이드</h5>
-      <p>
-        <a href="#">인스타</a>
-      </p>
+      <h5>관악 헤드메이드 Footer</h5>
+      <div>
+        <a href="#">
+          <span class="icon">
+            <i class="fab fa-lg fa-instagram"></i>
+          </span>
+        </a>
+        <a href="#">
+          <span class="icon">
+            <i class="fab fa-lg fa-facebook-f"></i>
+          </span>
+        </a>
+      </div>
     </div>
   </footer>
-
-  <span class="icon-text">
-  <span class="icon">
-    <i class="fas fa-train"></i>
-  </span>
-  <span>Paris</span>
-  <span class="icon">
-    <i class="fas fa-arrow-right"></i>
-  </span>
-  <span>Budapest</span>
-  <span class="icon">
-    <i class="fas fa-arrow-right"></i>
-  </span>
-  <span>Bucharest</span>
-  <span class="icon">
-    <i class="fas fa-arrow-right"></i>
-  </span>
-  <span>Istanbul</span>
-  <span class="icon">
-    <i class="fas fa-flag-checkered"></i>
-  </span>
-</span>
 </template>
 
 <script>
 export default {
-  name: "Footer"
+  name: "Footer",
+  mounted: function() {
+    this.$loadScript("https://kit.fontawesome.com/a990b3bd5e.js")
+  }
 }
 
 </script>
@@ -41,5 +31,3 @@ export default {
 <style scoped>
 
 </style>
-
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
