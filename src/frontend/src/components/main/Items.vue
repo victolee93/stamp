@@ -1,5 +1,5 @@
 <template>
-  <nav class="panel">
+  <nav id="item-container" class="panel">
     <div id="category-title-box" class="panel-tabs">
       <div class="category-title">라탄</div>
       <div class="category-title">뜨개</div>
@@ -11,7 +11,7 @@
     </div>
 
     <div id="store-list-box">
-      <div class="panel-block columns">
+      <div class="panel-block columns store-info-box">
         <div class="column is-1">
         <span class="image is-64x64" href="#">
           <img src="../../assets/img/달쉬캔들_대지_1.png">
@@ -22,7 +22,7 @@
         </div>
       </div>
 
-      <div class="panel-block columns">
+      <div class="panel-block columns store-info-box">
         <div class="column is-1">
         <span class="image is-64x64" href="#">
           <img src="../../assets/img/모드니_대지_1.png">
@@ -33,7 +33,7 @@
         </div>
       </div>
 
-      <div class="panel-block columns">
+      <div class="panel-block columns store-info-box">
         <div class="column is-1">
         <span class="image is-64x64" href="#">
           <img src="../../assets/img/리메이크_대지_1.png">
@@ -54,6 +54,10 @@ export default {
 </script>
 
 <style scoped>
+#item-container {
+  margin: 1.5em 0em;
+}
+
 /* 카테고리 */
 #category-title-box {
   line-height: 100px;
@@ -70,5 +74,8 @@ export default {
 /* 상점 */
 #store-list-box {
   padding: 3em 1em;
+}
+.store-info-box {
+  padding: 1.5em 0em;
 }
 </style>+
