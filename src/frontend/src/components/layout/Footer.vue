@@ -2,9 +2,9 @@
   <footer class="footer">
     <div class="block">
       <div class="field is-grouped is-align-items-center">
-        <span class="image is-32x32" href="#">
+        <a class="image is-32x32" href="/">
           <img src="../../assets/img/칠한친구_대지_1.png">
-        </span>
+        </a>
         <p class="content is-medium">
           <strong>관악 헤드메이드</strong>
         </p>

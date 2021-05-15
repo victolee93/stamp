@@ -1,7 +1,7 @@
 <template>
   <div id="search-box" class="is-10">
     <div class="control has-icons-left">
-        <input id="search-input" class="input is-rounded" type="text" placeholder="오늘의 취미">
+      <input id="search-input" class="input is-rounded" type="text" placeholder="오늘의 취미">
       <span id="search-input-icon" class="icon is-small is-left">
         <i class="fas fa-search"></i>
       </span>

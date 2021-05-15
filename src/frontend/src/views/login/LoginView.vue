@@ -9,7 +9,7 @@
 
 <script>
 import Header from "@/components/layout/Header";
-import Login from "@/components/member/Login";
+import Login from "@/components/member/MemberLogin";
 import Footer from "@/components/layout/Footer";
 
 export default {

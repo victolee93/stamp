@@ -3,7 +3,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <!-- home icon -->
-        <a class="image is-64x64" href="#">
+        <a class="image is-64x64" href="/">
           <img src="../../assets/img/칠한친구_대지_1.png">
         </a>
 
@@ -18,7 +18,7 @@
       <div id="navbarBasicExample" class="navbar-menu">
         <!-- nav start -->
         <div class="navbar-start">
-          <a class="navbar-item">
+          <a class="navbar-item" href="/">
             Home
           </a>
 

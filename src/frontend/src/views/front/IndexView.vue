@@ -4,7 +4,8 @@
     <MainTitle/>
     <Map/>
     <Search/>
-    <Items/>
+    <CategoryNavigator/>
+    <StoreList/>
   </div>
 
   <Footer/>
@@ -12,10 +13,11 @@
 
 <script>
 import Header from "@/components/layout/Header";
-import MainTitle from "@/components/main/Title";
+import MainTitle from "@/components/main/MainTitle";
 import Map from "@/components/module/Map";
 import Search from "@/components/module/Search";
-import Items from "@/components/main/Items";
+import CategoryNavigator from "@/components/category/CategoryNavigator";
+import StoreList from "@/components/category/StoreList.vue";
 import Footer from "@/components/layout/Footer";
 
 export default {
@@ -25,7 +27,8 @@ export default {
     MainTitle,
     Map,
     Search,
-    Items,
+    CategoryNavigator,
+    StoreList,
     Footer,
   }
 }
