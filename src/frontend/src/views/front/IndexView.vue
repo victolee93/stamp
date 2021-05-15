@@ -19,7 +19,7 @@ import Items from "@/components/main/Items";
 import Footer from "@/components/layout/Footer";
 
 export default {
-  name: "Main.vue",
+  name: "IndexView",
   components: {
     Header,
     MainTitle,
