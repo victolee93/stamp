@@ -28,7 +28,7 @@
 
       <h1>작품 소개</h1>
       <figure class="image">
-        <img src="https://cdn.crowdpic.net/list-thumb/thumb_l_E9805C46B919CCBF6C24F9094B14369E.jpg">
+        <img @click="$refs.imageModal.popImageModal" src="https://cdn.crowdpic.net/list-thumb/thumb_l_E9805C46B919CCBF6C24F9094B14369E.jpg">
       </figure>
       <div>
         라탄 도시락 가방! <br>
@@ -36,12 +36,21 @@
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
       </div>
     </div>
+
+    <!-- modal -->
+    <ImageModal ref="imageModal"/>
+
   </div>
 </template>
 
 <script>
+import ImageModal from '@/components/util/ImageModal'
+
 export default {
-  name: "StoreInfo"
+  name: "StoreInfo",
+  components: {
+    ImageModal
+  }
 }
 </script>
 
